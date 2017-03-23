@@ -25,6 +25,12 @@ h1 {
   margin: 0 auto;
 }
 
+@media only screen and (max-width: 1024px) {
+  .container {
+    width: 100%;
+  }
+}
+
 /* header */
 .ribbon {
   display: flex;
@@ -35,6 +41,13 @@ h1 {
   margin-top: 1rem;
   font: 1rem;
 }
+
+@media only screen and (max-width: 1024px) {
+  .ribbon {
+    margin-top: 0;
+  }
+}
+
 
 .company {
   display: flex;
@@ -64,8 +77,18 @@ nav li {
 .hero {
   background-image: url(../images/glasses-bg.png);
   background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   height: 30rem;
   padding-top: 1rem;
+}
+
+@media only screen and (max-width: 1024px) {
+  .hero {
+    padding-top: 0;
+    width: 100%;
+    height: 22rem;
+  }
 }
 
 .flex-container {
@@ -74,14 +97,32 @@ nav li {
   justify-content: flex-end;
 }
 
+@media only screen and (max-width: 1024px) {
+  .flex-container {
+    width: 100%;
+  }
+}
+
 .headline {
   background-color: white;
   display: inline-block;
   margin-top: 10rem;
   margin-right: -2rem;
   padding: 1.5rem 5rem;
-
+  line-height: 2.4rem;
 }
+
+@media only screen and (max-width: 1024px) {
+  .headline {
+    margin-top: 5rem;
+    margin-right: 2rem;
+    padding: 1rem 4rem;
+  }
+  .headline h1 {
+    font-size: 1.33rem;
+  }
+}
+
 
 /* products */
 
@@ -122,7 +163,6 @@ nav li {
 .info {
   width: 35%;
   margin-right: 5%;
-
 }
 
 .title {
@@ -130,13 +170,22 @@ nav li {
   background-color: cadetblue;
   font-weight: bold;
   padding: .5rem 1.25rem;
+}
 
+.info p {
+  margin-top: 2rem;
 }
 /* footer */
 
 footer {
   max-width: 960px;
   margin: 0 auto;
+}
+
+@media only screen and (max-width: 1024px) {
+  footer {
+    width: 100%;
+  }
 }
 
   .ribbon-bottom{
