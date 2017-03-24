@@ -74,6 +74,13 @@ nav li {
   margin: auto 1rem;
 }
 
+@media only screen and (max-width: 400px) {
+  .menu {
+    display: none;
+  }
+
+}
+
 .hero {
   background-image: url(../images/glasses-bg.png);
   background-size: cover;
